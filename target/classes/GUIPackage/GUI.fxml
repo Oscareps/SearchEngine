@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIPackage.Controller">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="btn_showDic" layoutX="351.0" layoutY="352.0" mnemonicParsing="false" onAction="#presentDictionary" prefHeight="31.0" prefWidth="140.0" text="Show Dictionary" />
+            <Button fx:id="btn_UploadDic" layoutX="195.0" layoutY="352.0" mnemonicParsing="false" onAction="#uploadDicToRam" prefHeight="31.0" prefWidth="140.0" text="Upload Dictionary" />
+            <Button fx:id="btn_DeleteIndex" layoutX="501.0" layoutY="352.0" mnemonicParsing="false" onAction="#deleteIndex" prefHeight="31.0" prefWidth="140.0" text="Delete" />
+            <TextField fx:id="textField_toCorpus" layoutX="143.0" layoutY="48.0" prefHeight="31.0" prefWidth="430.0" promptText="Enter path to corpus" />
+            <TextField fx:id="textField_toIndex" layoutX="143.0" layoutY="92.0" prefHeight="31.0" prefWidth="430.0" promptText="Enter path to save index" />
+            <Label fx:id="label_ToCorpus" layoutX="13.0" layoutY="53.0" prefHeight="18.0" prefWidth="100.0" text="Path to corpus" />
+            <Label fx:id="label_ToIndex" layoutX="13.0" layoutY="97.0" prefHeight="18.0" prefWidth="100.0" text="Path to Index" />
+            <CheckBox fx:id="checkBox_Steam" layoutX="22.0" layoutY="338.0" mnemonicParsing="false" onAction="#setStem" text="Steam it" />
+            <Button fx:id="btn_BrowseCorpus" layoutX="582.0" layoutY="50.0" mnemonicParsing="false" onAction="#chooseDirToCorpus" text="Browse" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="btn_BrowseIndex" layoutX="583.0" layoutY="95.0" mnemonicParsing="false" onAction="#chooseDirToIndex" text="Browse">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="btn_CreateIndex" layoutX="652.0" layoutY="92.0" mnemonicParsing="false" onAction="#indexCorpus" prefHeight="31.0" prefWidth="129.0" text="Create Index" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="checkBox_Semantic" layoutX="22.0" layoutY="365.0" mnemonicParsing="false" onAction="#setSemantic" text="Add Semantic Model" />
+            <TextField fx:id="textField_fileQuery" layoutX="143.0" layoutY="137.0" prefHeight="31.0" prefWidth="430.0" promptText="Enter path to query file" />
+            <Label fx:id="label_ToQureyFile" layoutX="12.0" layoutY="141.0" prefHeight="21.0" prefWidth="140.0" text="Path to Query File" />
+            <TextField fx:id="textField_query" layoutX="143.0" layoutY="216.0" prefHeight="31.0" prefWidth="430.0" promptText="Enter query" />
+            <Button fx:id="btn_SearchSingleQuery" layoutX="583.0" layoutY="216.0" mnemonicParsing="false" onAction="#searchSingleQuery" prefHeight="21.0" prefWidth="65.0" text="Search" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_SearchQueryFile" layoutX="652.0" layoutY="137.0" mnemonicParsing="false" onAction="#searchTheFile" prefHeight="31.0" prefWidth="140.0" text="Search That File!" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="label_ToSingleQuery" layoutX="12.0" layoutY="219.0" prefHeight="21.0" prefWidth="140.0" text="Query" />
+            <TextField fx:id="textField_toResultFile" layoutX="143.0" layoutY="177.0" prefHeight="31.0" prefWidth="430.0" promptText="Enter path to result file" />
+            <Label fx:id="label_ToResultFile" layoutX="12.0" layoutY="181.0" prefHeight="21.0" prefWidth="140.0" text="Path to result file" />
+            <Button fx:id="btn_BrowseResultPath" layoutX="583.0" layoutY="179.0" mnemonicParsing="false" onAction="#chooseDirToResultFile" text="Browse">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="btn_BrowseFilePath" layoutX="583.0" layoutY="138.0" mnemonicParsing="false" onAction="#chooseQueryFile" text="Browse">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="btn_PresentResults" layoutX="652.0" layoutY="177.0" mnemonicParsing="false" onAction="#prsenentResults" prefHeight="31.0" prefWidth="140.0" text="Present Results">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="checkBox_PresentsEnititeis" layoutX="671.0" layoutY="221.0" mnemonicParsing="false" onAction="#setPresentEntites" text="Present Entities" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

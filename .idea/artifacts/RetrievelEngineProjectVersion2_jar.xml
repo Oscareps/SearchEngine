@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RetrievelEngineProjectVersion2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RetrievelEngineProjectVersion2_jar</output-path>
+    <root id="archive" name="RetrievelEngineProjectVersion2.jar">
+      <element id="module-output" name="RetrievelEngineProjectVersion2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Resources/medallia-word2vec-0.10.2-jar-with-dependencies.jar" path-in-jar="/" />
+      <element id="library" level="project" name="medallia-word2vec-0.10.2-jar-with-dependencies" />
+    </root>
+  </artifact>
+</component>
